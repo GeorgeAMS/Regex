@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.container {
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+
+.contenido-formulario {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 50px 60px 150px;
+    text-align: center;
+    border-radius: 25px;
+    color: #333333;
+    margin-top: 20px;
+    border: 1px solid black;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+.contenido-formulario h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #333333;
+    position: relative;
+}
+
+.contenido-formulario h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #4CAF50; /* Cambiado a verde */
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.Juntar{
+    display: inline-flex;
+    width: 100%;
+}
+.Juntar input{
+    width: 750px;    
+}
+
+.input-field {
+    background-color: #4CAF50; /* Cambiado a verde */
+    margin: 15px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    border: 1px solid black;
+
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #ffffff;
+    height: 50px;
+    margin-left: 10px;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+form p {
+    color: #333333;
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    color: #4CAF50; /* Cambiado a verde */
+    margin-left: 5px;
+}
+
+.btn-field {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn-field button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: #4CAF50; 
+    color: #ffffff;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.btn-field button.disable {
+    background-color: #eaeaea;
+    color: #333333;
+}
+
+
+#forgotPassword {
+    display: none;
+}
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.signInActive {
+    padding-bottom: 20px; 
+}
+
+.btn-field {
+    transition: margin-top 0.5s; 
+}
