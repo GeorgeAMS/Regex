@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     color: #333333;
+    background: grey;
 }
 
 .contenido-formulario {
@@ -27,7 +28,7 @@
     color: #333333;
     margin-top: 20px;
     border: 1px solid black;
-    height: 600px;
+    height: 650px;
     margin-bottom: 40px;
 }
 
@@ -54,7 +55,7 @@
     width: 100%;
 }
 .Juntar input{
-    width: 750px;    
+    width: 750px;
 }
 
 .input-field {
@@ -111,7 +112,7 @@ form p a {
 .btn-field button {
     flex-basis: 48%;
     font-size: 16px;
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     color: #ffffff;
     height: 40px;
     border-radius: 10px;
@@ -138,9 +139,9 @@ form p a {
 }
 
 .signInActive {
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
 
 .btn-field {
-    transition: margin-top 0.5s; 
+    transition: margin-top 0.5s;
 }

@@ -8,55 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <div class="contenido-formulario">
-            <h1 id="title">¡Bienvenido a Agapet!</h1>
-            <form>
-                <div class="input-group">
-                    <div class="Juntar" id="nameInput">
-                        <div class="input-field">
-                            <i class="fas fa-user"></i>
-                            <input id="NombreImput" type="text" placeholder="Nombre">
-                        </div>
-                        <div class="input-field">
-                            <i class="fas fa-envelope"></i>
-                            <input id="ApellidoImput" type="text" placeholder="Apellidos">
-                        </div>
-                    </div>
-                    <div class="Juntar" id="nameInput">
-                        <div class="input-field" id="direccionInput">
-                            <i class="fas fa-envelope"></i>
-                            <input id="DireccionImput" type="text" placeholder="Direccion">
-                        </div>
-                        <div class="input-field" id="cedulaInput">
-                            <i class="fas fa-envelope"></i>
-                            <input id="CedulaImput" type="text" placeholder="Cedula">
-                        </div>
-                    </div>
-                    <div class="input-field" id="contactoInput">
-                        <i class="fas fa-envelope"></i>
-                        <input id="NumeroImput" type="text" placeholder="Numero de contacto">
+<div class="container">
+    <div class="contenido-formulario">
+        <h1 id="title">¡Bienvenido a Agapet!</h1>
+        <form>
+            <div class="input-group">
+                <div class="Juntar">
+                    <div class="input-field">
+                        <i class="fas fa-user" style="color: black;"></i>
+                        <input id="NombreImput" type="text" placeholder="Nombres">
                     </div>
                     <div class="input-field">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-user" style="color: black;"></i>
+                        <input id="ApellidoImput" type="text" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div class="Juntar">
+                    <div class="input-field">
+                        <i class="fas fa-user"style="color: black;"></i>
+                        <input id="UsuarioUmput" type="text" placeholder="Usuario">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-mobile-alt"style="color: black;"></i>
+                        <input id="NumeroImput" type="text" placeholder="Numero de contacto">
+                    </div>
+                </div>
+                <div class="Juntar">
+                    <div class="input-field">
+                        <i class="fas fa-envelope"style="color: black;"></i>
                         <input id="CorreoImput" type="email" placeholder="Correo">
                     </div>
                     <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input id="ContraseñaImput" type="password" placeholder="Contraseña">
-                    </div>
-                    <p id="forgotPassword">¿Olvidaste tu contraseña?<a href="#">Haz clic aquí</a></p>
-                    <div class="btn-field">
-                        <button id="signUp" type="button">Regístrate</button>
-                        <button id="signIn" type="button" class="disable">Iniciar Sesión</button>
+                        <i class="fas fa-id-card"style="color: black;"></i>
+                        <input id="CedulaImput" type="text" placeholder="Cedula">
                     </div>
                 </div>
-            </form>
-        </div>
+                <div class="Juntar" id="">
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt fa-spin"style="color: black;"></i>
+                        <input id="DireccionImput" type="text" placeholder="Direccion">
+                    </div>
+
+                </div>
+                <div class="Juntar">
+                    <div class="input-field">
+                        <i class="fas fa-calendar"style="color: black;"></i>
+                        <input id="FechaImput" type="text" placeholder="Fecha de Nacimiento">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"style="color: black;"></i>
+                        <input id="ContraseñaImput" type="password" placeholder="Contraseña">
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button id="signUp" type="button" style="margin-left: 27%">Regístrate</button>
+                    <button id="signIn" type="button" class="disable" style="display: none">Iniciar Sesión</button>
+                </div>
+            </div>
+        </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="formulario.js"></script>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="formulario.js"></script>
 </body>
 </html>
-
