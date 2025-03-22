@@ -18,6 +18,7 @@ const Cedula =  /^[0-9]{5,11}$/;
 const Celular = /(^(60)[1-7][0-9]{7}|^(3)[0-9]{9})/;
 const Correo = /^(?!.*\.\.)[A-Za-z0-9._-]+@[A-Za-z0-9.-]+(\.([A-Za-z]{2,}))+/;
 const Contra = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,12}$/;
+const Date = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$/;
 const Direccion = /^(Calle |Carrera |Avenida |Diagonal |Transversal )\d{1,3}(|[a-zA-Z])( Sur| Este| Oeste| Norte| Sureste| Noreste| Suroeste)? (#) [0-9]{1,3}(|[a-zA-Z])(-)[0-9]{1,3}/;
 // Variables globales
 
@@ -30,8 +31,9 @@ $("#signUp").click(function () {
     let cedula = $("#CedulaImput").val().trim();
     let numero = $("#NumeroImput").val().trim();
     let correo = $("#CorreoImput").val().trim();
+    let fecha = $("#FechaImput").val().trim();
     let contraseña = $("#ContraseñaImput").val().trim();
-
+/*
     if(!nombre ) return alert("!! El campo Nombre no puede estar vacio !!");
     else if (!Nombres.test(nombre)) return alert("El campo nombre es inválido (No puede contener números)");
 
@@ -57,8 +59,13 @@ $("#signUp").click(function () {
     if (!cedula ) return alert("!! El campo Cédula no puede estar vacio !!");
     else if (!Cedula.test(cedula)) return alert("El campo cédula no puede contener letras y su longitud es entre 5-10 números");
 
+
     if (!contraseña ) return alert("!! El campo Contraseña no puede estar vacio !!");
     else if (!Contra.test(contraseña)) return alert("La contraseña debe cumplir los siguientes requisitos: \n"+"Deb contener una letra mayuscula, una minuscula, un digito especial y una longitud de 8-12 digitos");
+     */
+    if (!fecha ) return alert("!! El campo Fecha no puede estar vacio !!");
+    else if (!Date.test(fecha)) return alert("El campo Fecha debe cumplir el siguiente formato\n" +
+        "Dia/Mes/Año");
 
     alert(`Su usuario fue creado con éxito, ¡Bienvenido ${nombre} ${apellido}!`);
 });
